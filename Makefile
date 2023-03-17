@@ -64,12 +64,12 @@ contribtargets:
 	$(MAKE) -C contrib
 
 webtargets:
-	$(MAKE) -C web
+	$(MAKE) -C docs
 
 clean nuke:
 	rm -rf $(JUNK) *~ core* \#*
 	$(MAKE) -C contrib $@
-	$(MAKE) -C web $@
+	$(MAKE) -C docs $@
 
 check test: clean
 	./prep_gitscheck
